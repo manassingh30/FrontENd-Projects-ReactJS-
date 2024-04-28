@@ -17,10 +17,10 @@ dist-ssr
 !.vscode/extensions.json
 .idea
 .DS_Store
+FrontENd-Projects-ReactJS-/Ripple/.env
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
 *.sw?
-RIPPLE/.env
 
