@@ -24,3 +24,7 @@ Only VITE_SOME_KEY will be exposed as import.meta.env.VITE_SOME_KEY to your clie
 
             console.log(import.meta.env.VITE_SOME_KEY) // "123"
             console.log(import.meta.env.DB_PASSWORD) // undefined
+
+## 2
+- Was facing some issue in adding .env files to .gitignore (one way to add during commit phase)
+- discovered another way and that is make env file not as '.env' but as '.env.local' as '.local' file gets automatically gitignored
