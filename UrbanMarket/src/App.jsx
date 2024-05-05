@@ -37,24 +37,27 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />}/>
           <Route path="/order" element={
-            <ProtectedRouteForAdmin>
+            <ProtectedRoutes>
               <Order />
-            </ProtectedRouteForAdmin>
+            </ProtectedRoutes>
           }/>
           <Route path="/cart" element={<Cart />}/>
           <Route path="/dashboard" element={
-            <ProtectedRouteForAdmin>
+            <ProtectedRoutesForAdmin>
               <Dashboard />
-            </ProtectedRouteForAdmin>
+            </ProtectedRoutesForAdmin>
           }/>
           <Route path='/login' element= {<Login />} />
           <Route path='/signup' element= {<Signup />} />
           <Route path="/productinfo/:id" element={<ProductInfo />} />
           <Route path='/addproduct' element= {
-            <ProtectedRouteForAdmin>
+            <ProtectedRoutesForAdmin>
                 <AddProduct />
-          </ProtectedRouteForAdmin>} />
-          <Route path='/updateproduct' element= {<UpdateProduct />} />
+          </ProtectedRoutesForAdmin>} />
+          <Route path='/updateproduct' element= {
+            <ProtectedRoutesForAdmin>
+              <UpdateProduct/>
+            </ProtectedRoutesForAdmin> } />
           <Route path="/*" element={<NoPage />}/>
         </Routes>
         <ToastContainer />
@@ -67,24 +70,23 @@ export default App
 
 //user
 
-export const ProtectedRoute= ({children})=>{
-  const user= localStorage.getItem('user')
-  if(user){
+export const ProtectedRoutes = ({ children }) => {
+  if (localStorage.getItem('currentUser')) {
     return children
   }
-  else{
-    return <Navigate to={'/login'}/>
+  else {
+    return <Navigate to='/login' />
   }
 }
 
 //admin
 
-const ProtectedRouteForAdmin = (children)=>{
+const ProtectedRoutesForAdmin = ({children})=>{
   const admin= JSON.parse(localStorage.getItem('user'))
   if(admin.user.email === 'akashrajakku263@gmail.com'){
     return children
   }
   else{
-    return <Navigate to={'/login'}/>
+    return <Navigate to='/login'/>
   }
 }
