@@ -5,18 +5,30 @@ convenience and efficiency.
 
 
 Key Features:
+
+
 ● Effortless Shopping: Explore a diverse array of products and effortlessly
 add them to your cart with our intuitive interface.
+
+
 ● Secure Payments: Enjoy peace of mind with our secure Razorpay
 integration, guaranteeing the safety of your transactions.
+
+
 ● User/Admin Login: Experience a personalized journey with separate
 portals for users and admins, each tailored to their unique needs.
+
+
 ● Dynamic Dashboard: Admins can effortlessly manage products, orders,
 and user accounts through our dynamic dashboard, streamlining
 administrative tasks.
+
+
 ● Personalized Experience: Enjoy a customized interface that adapts to
 your preferences, whether you're shopping as a user or managing the
 platform as an admin.
+
+
 ● Interactive Design: Immerse yourself in a visually stunning and
 engaging environment, designed to enhance your browsing and shopping
 experience.
