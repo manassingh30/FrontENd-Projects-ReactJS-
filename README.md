@@ -2,6 +2,8 @@
 online shopping experience. Powered by React and Firebase, it offers a seamless
 fusion of advanced technology and user-centric design, ensuring both
 convenience and efficiency.
+
+
 Key Features:
 ● Effortless Shopping: Explore a diverse array of products and effortlessly
 add them to your cart with our intuitive interface.
